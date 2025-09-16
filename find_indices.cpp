@@ -46,3 +46,10 @@ int main() {
 
     return 0;
 }
+
+// ---------------------------
+// How this program works:
+// 1) It asks the user for an array and a key.
+// 2) It checks each element.
+// 3) If the element matches the key, its index is printed.
+// ---------------------------

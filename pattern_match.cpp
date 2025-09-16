@@ -44,3 +44,29 @@ int main() {
     return 0;
 }
 
+// -----------------------------------------------------------------------------
+// How this program works (Naive String Pattern Matching):
+//
+// 1) It asks the user to enter two strings:
+//       • text    → the main string to search in
+//       • pattern → the smaller string we want to find
+//
+// 2) The function findFirstOccurrence() checks every possible starting
+//    position in the text. For each position, it compares the characters
+//    of the pattern with the corresponding characters of the text.
+//
+// 3) If all characters of the pattern match, it returns the index of that
+//    position (0-based index).
+//
+// 4) If no position matches, the function returns -1.
+//
+// 5) Special cases handled:
+//       • Empty pattern → return 0 (an empty string is found at the start).
+//       • Pattern longer than text → return -1 immediately.
+//
+// Example:
+//     text    = "hello world"
+//     pattern = "world"
+//     Result  = 6 (because "world" begins at index 6 in "hello world").
+//
+// -----------------------------------------------------------------------------
